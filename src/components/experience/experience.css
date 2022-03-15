@@ -1,0 +1,84 @@
+
+.experience__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+   
+}
+.experience__container > div{
+
+    background: var(--color-bg-variant);
+    border-radius: 2rem;
+    padding: 2.4rem 5rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+.experience__container > div:hover{
+    background:transparent;
+    /* background-color: var( --color-primary-variant); */
+    cursor: default;
+}
+.experience__container > div h3{
+
+   color: var(--color-primary);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.experience__conten{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+
+}
+.experience__skill{
+
+    display: flex;
+    gap: 1rem;
+}
+.experience__skill-icon{
+    margin-top: 6px;
+    color: var(--color-primary);
+}
+@media screen  and (max-width:1024px){
+    .experience__container{
+       
+        grid-template-columns: 1fr ;
+      
+    }
+    .experience__container > div{
+
+     width: 80%;
+     padding: 2rem;
+     margin: 0 auto;
+    }
+    .experience__conten{
+       
+        padding: 1rem;
+      
+    
+    }
+}
+/* ============== dung rieng   mobi=============================*/
+@media screen  and (max-width:600px){
+    .experience__conten{
+       
+        grid-template-columns: 1fr ;
+      
+        row-gap: 1rem;
+
+    }
+    .experience__container > div{
+
+        width: 100%;
+        padding: 2rem 1rem;
+        margin: 0 auto;
+       }
+       .experience__conten{
+       
+        padding: 3rem;
+      
+    
+    }
+
+}
+
